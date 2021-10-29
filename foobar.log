@@ -1,0 +1,421 @@
+[1][default:/src:0]# build
+   : Loading /src/habitat/plan.sh
+   meme-machine: Plan loaded
+   meme-machine: Validating plan metadata
+   meme-machine: Using HAB_BIN=/hab/pkgs/core/hab/1.6.351/20210706202052/bin/hab for installs, signing, and hashing
+   meme-machine: hab-plan-build setup
+   meme-machine: Writing pre_build file
+   meme-machine: Resolving scaffolding dependencies
+» Installing core/scaffolding-ruby
+☁ Determining latest version of core/scaffolding-ruby in the 'stable' channel
+☛ Verifying core/scaffolding-ruby/0.8.11/20211019150418
+☛ Verifying core/bundler/2.2.14/20211019145057
+☛ Verifying core/tar/1.34/20210826055226
+☛ Verifying core/rq/0.10.4/20210826061933
+☛ Verifying core/gcc/9.3.0/20210826051400
+☛ Verifying core/make/4.3/20210826060457
+☛ Verifying core/pkg-config/0.29.2/20210826054237
+☛ Verifying core/ruby/3.0.2/20211019144421
+☛ Verifying core/busybox-static/1.33.0/20210826062032
+☛ Verifying core/openssl/1.0.2zb/20211016150910
+☛ Verifying core/libyaml/0.2.5/20210826234948
+☛ Verifying core/libffi/3.3/20210826063232
+☛ Verifying core/readline/8.1/20210826055049
+☛ Verifying core/nss-myhostname/0.3/20210826190135
+☛ Verifying core/cacerts/2021.09.30/20211016150835
+☛ Verifying core/openssl-fips/2.0.16/20210826061345
+☛ Verifying core/libtool/2.4.6/20210826055344
+☛ Verifying core/coreutils/8.32/20210826054709
+☛ Verifying core/sed/4.8/20210826054515
+☛ Verifying core/grep/3.6/20210826055009
+☛ Verifying core/libcap/2.49/20210826054457
+☛ Verifying core/pcre/8.44/20210826054940
+☛ Verifying core/ncurses/6.2/20210826054317
+☛ Verifying core/acl/2.2.53/20210826054434
+☛ Verifying core/attr/2.4.48/20210826054416
+→ Using core/gcc-libs/9.3.0/20210826054136
+☛ Verifying core/libmpc/1.2.1/20210826051334
+☛ Verifying core/binutils/2.36.1/20210826050955
+☛ Verifying core/mpfr/4.1.0/20210826051301
+☛ Verifying core/gmp/6.2.1/20210826051223
+→ Using core/zlib/1.2.11/20210826050912
+→ Using core/glibc/2.33/20210826050111
+→ Using core/linux-headers/4.20.17/20210826050015
+✓ Installed core/bundler/2.2.14/20211019145057
+✓ Installed core/tar/1.34/20210826055226
+✓ Installed core/rq/0.10.4/20210826061933
+✓ Installed core/gcc/9.3.0/20210826051400
+✓ Installed core/make/4.3/20210826060457
+✓ Installed core/pkg-config/0.29.2/20210826054237
+✓ Installed core/ruby/3.0.2/20211019144421
+✓ Installed core/busybox-static/1.33.0/20210826062032
+✓ Installed core/openssl/1.0.2zb/20211016150910
+✓ Installed core/libyaml/0.2.5/20210826234948
+✓ Installed core/libffi/3.3/20210826063232
+✓ Installed core/readline/8.1/20210826055049
+✓ Installed core/nss-myhostname/0.3/20210826190135
+✓ Installed core/cacerts/2021.09.30/20211016150835
+✓ Installed core/openssl-fips/2.0.16/20210826061345
+✓ Installed core/libtool/2.4.6/20210826055344
+✓ Installed core/coreutils/8.32/20210826054709
+✓ Installed core/sed/4.8/20210826054515
+✓ Installed core/grep/3.6/20210826055009
+✓ Installed core/libcap/2.49/20210826054457
+✓ Installed core/pcre/8.44/20210826054940
+✓ Installed core/ncurses/6.2/20210826054317
+✓ Installed core/acl/2.2.53/20210826054434
+✓ Installed core/attr/2.4.48/20210826054416
+✓ Installed core/libmpc/1.2.1/20210826051334
+✓ Installed core/binutils/2.36.1/20210826050955
+✓ Installed core/mpfr/4.1.0/20210826051301
+✓ Installed core/gmp/6.2.1/20210826051223
+✓ Installed core/scaffolding-ruby/0.8.11/20211019150418
+★ Install of core/scaffolding-ruby/0.8.11/20211019150418 complete with 29 new packages installed.
+   meme-machine: Resolved scaffolding dependency 'core/scaffolding-ruby' to /hab/pkgs/core/scaffolding-ruby/0.8.11/20211019150418
+   meme-machine: Loading Scaffolding /hab/pkgs/core/scaffolding-ruby/0.8.11/20211019150418/lib/scaffolding.sh
+   meme-machine: Detected Rack app type
+   meme-machine: Adding git to build dependencies
+   meme-machine: Adding Busybox package to run dependencies
+No Ruby version found in ./Gemfile.lock
+   meme-machine: No Ruby version detected in Plan or Gemfile.lock, using default 'core/ruby'
+   meme-machine: Setting pkg_svc_run='meme-machine-web'
+   meme-machine: Resolving build dependencies
+» Installing core/git
+☁ Determining latest version of core/git in the 'stable' channel
+☛ Verifying core/git/2.31.0/20211016175551
+☛ Verifying core/curl/7.75.0/20211016163637
+☛ Verifying core/expat/2.4.1/20210826055433
+☛ Verifying core/gettext/0.21/20210826060159
+☛ Verifying core/openssh/7.9p1/20211016173828
+☛ Verifying core/perl/5.32.1/20210826055654
+→ Using core/sed/4.8/20210826054515
+☛ Verifying core/nghttp2/1.43.0/20210826125040
+☛ Verifying core/xz/5.2.5/20210826060128
+→ Using core/openssl/1.0.2zb/20211016150910
+→ Using core/cacerts/2021.09.30/20211016150835
+→ Using core/openssl-fips/2.0.16/20210826061345
+☛ Verifying core/bzip2/1.0.8/20210826054218
+☛ Verifying core/gdbm/1.19/20210826055409
+☛ Verifying core/db/5.3.28/20210826055454
+→ Using core/coreutils/8.32/20210826054709
+☛ Verifying core/less/563/20210826055635
+→ Using core/gmp/6.2.1/20210826051223
+→ Using core/libcap/2.49/20210826054457
+→ Using core/ncurses/6.2/20210826054317
+→ Using core/pcre/8.44/20210826054940
+→ Using core/gcc-libs/9.3.0/20210826054136
+→ Using core/zlib/1.2.11/20210826050912
+→ Using core/acl/2.2.53/20210826054434
+→ Using core/attr/2.4.48/20210826054416
+→ Using core/glibc/2.33/20210826050111
+→ Using core/linux-headers/4.20.17/20210826050015
+✓ Installed core/curl/7.75.0/20211016163637
+✓ Installed core/expat/2.4.1/20210826055433
+✓ Installed core/gettext/0.21/20210826060159
+✓ Installed core/openssh/7.9p1/20211016173828
+✓ Installed core/perl/5.32.1/20210826055654
+✓ Installed core/nghttp2/1.43.0/20210826125040
+✓ Installed core/xz/5.2.5/20210826060128
+✓ Installed core/bzip2/1.0.8/20210826054218
+✓ Installed core/gdbm/1.19/20210826055409
+✓ Installed core/db/5.3.28/20210826055454
+✓ Installed core/less/563/20210826055635
+✓ Installed core/git/2.31.0/20211016175551
+★ Install of core/git/2.31.0/20211016175551 complete with 12 new packages installed.
+   meme-machine: Resolved build dependency 'core/git' to /hab/pkgs/core/git/2.31.0/20211016175551
+» Installing core/scaffolding-ruby
+☁ Determining latest version of core/scaffolding-ruby in the 'stable' channel
+→ Using core/scaffolding-ruby/0.8.11/20211019150418
+★ Install of core/scaffolding-ruby/0.8.11/20211019150418 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/scaffolding-ruby' to /hab/pkgs/core/scaffolding-ruby/0.8.11/20211019150418
+» Installing core/bundler/2.2.14/20211019145057
+→ Using core/bundler/2.2.14/20211019145057
+★ Install of core/bundler/2.2.14/20211019145057 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/bundler/2.2.14/20211019145057' to /hab/pkgs/core/bundler/2.2.14/20211019145057
+» Installing core/ruby/3.0.2/20211019144421
+→ Using core/ruby/3.0.2/20211019144421
+★ Install of core/ruby/3.0.2/20211019144421 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/ruby/3.0.2/20211019144421' to /hab/pkgs/core/ruby/3.0.2/20211019144421
+» Installing core/tar/1.34/20210826055226
+→ Using core/tar/1.34/20210826055226
+★ Install of core/tar/1.34/20210826055226 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/tar/1.34/20210826055226' to /hab/pkgs/core/tar/1.34/20210826055226
+» Installing core/busybox-static/1.33.0/20210826062032
+→ Using core/busybox-static/1.33.0/20210826062032
+★ Install of core/busybox-static/1.33.0/20210826062032 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/busybox-static/1.33.0/20210826062032' to /hab/pkgs/core/busybox-static/1.33.0/20210826062032
+» Installing core/rq/0.10.4/20210826061933
+→ Using core/rq/0.10.4/20210826061933
+★ Install of core/rq/0.10.4/20210826061933 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/rq/0.10.4/20210826061933' to /hab/pkgs/core/rq/0.10.4/20210826061933
+» Installing core/gcc/9.3.0/20210826051400
+→ Using core/gcc/9.3.0/20210826051400
+★ Install of core/gcc/9.3.0/20210826051400 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/gcc/9.3.0/20210826051400' to /hab/pkgs/core/gcc/9.3.0/20210826051400
+» Installing core/make/4.3/20210826060457
+→ Using core/make/4.3/20210826060457
+★ Install of core/make/4.3/20210826060457 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/make/4.3/20210826060457' to /hab/pkgs/core/make/4.3/20210826060457
+» Installing core/pkg-config/0.29.2/20210826054237
+→ Using core/pkg-config/0.29.2/20210826054237
+★ Install of core/pkg-config/0.29.2/20210826054237 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/pkg-config/0.29.2/20210826054237' to /hab/pkgs/core/pkg-config/0.29.2/20210826054237
+   meme-machine: Resolving run dependencies
+» Installing core/ruby
+☁ Determining latest version of core/ruby in the 'stable' channel
+→ Using core/ruby/3.0.2/20211019144421
+★ Install of core/ruby/3.0.2/20211019144421 complete with 0 new packages installed.
+   meme-machine: Resolved dependency 'core/ruby' to /hab/pkgs/core/ruby/3.0.2/20211019144421
+» Installing core/busybox-static
+☁ Determining latest version of core/busybox-static in the 'stable' channel
+→ Using core/busybox-static/1.33.0/20210826062032
+★ Install of core/busybox-static/1.33.0/20210826062032 complete with 0 new packages installed.
+   meme-machine: Resolved dependency 'core/busybox-static' to /hab/pkgs/core/busybox-static/1.33.0/20210826062032
+» Installing core/imagemagick
+☁ Determining latest version of core/imagemagick in the 'stable' channel
+☛ Verifying core/imagemagick/7.0.11-3/20210827021227
+☛ Verifying core/libpng/1.6.37/20210826130053
+→ Using core/xz/5.2.5/20210826060128
+→ Using core/gcc-libs/9.3.0/20210826054136
+→ Using core/zlib/1.2.11/20210826050912
+→ Using core/glibc/2.33/20210826050111
+→ Using core/linux-headers/4.20.17/20210826050015
+✓ Installed core/libpng/1.6.37/20210826130053
+✓ Installed core/imagemagick/7.0.11-3/20210827021227
+★ Install of core/imagemagick/7.0.11-3/20210827021227 complete with 2 new packages installed.
+   meme-machine: Resolved dependency 'core/imagemagick' to /hab/pkgs/core/imagemagick/7.0.11-3/20210827021227
+   meme-machine: Setting up environment
+   meme-machine: Populating runtime environment from dependencies
+   meme-machine: Populating buildtime environment from dependencies
+   meme-machine: Layering runtime environment on top of system environment
+   meme-machine: Layering buildtime environment on top of system environment
+   meme-machine: Setting PATH=/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/bin:/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app/binstubs:/hab/pkgs/core/git/2.31.0/20211016175551/bin:/hab/pkgs/core/scaffolding-ruby/0.8.11/20211019150418/bin:/hab/pkgs/core/bundler/2.2.14/20211019145057/bin:/hab/pkgs/core/ruby/3.0.2/20211019144421/bin:/hab/pkgs/core/tar/1.34/20210826055226/bin:/hab/pkgs/core/busybox-static/1.33.0/20210826062032/bin:/hab/pkgs/core/rq/0.10.4/20210826061933/bin:/hab/pkgs/core/gcc/9.3.0/20210826051400/bin:/hab/pkgs/core/make/4.3/20210826060457/bin:/hab/pkgs/core/pkg-config/0.29.2/20210826054237/bin:/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/bin:/hab/pkgs/core/curl/7.75.0/20211016163637/bin:/hab/pkgs/core/expat/2.4.1/20210826055433/bin:/hab/pkgs/core/gettext/0.21/20210826060159/bin:/hab/pkgs/core/openssh/7.9p1/20211016173828/bin:/hab/pkgs/core/openssh/7.9p1/20211016173828/sbin:/hab/pkgs/core/openssh/7.9p1/20211016173828/libexec:/hab/pkgs/core/perl/5.32.1/20210826055654/bin:/hab/pkgs/core/xz/5.2.5/20210826060128/bin:/hab/pkgs/core/bzip2/1.0.8/20210826054218/bin:/hab/pkgs/core/gdbm/1.19/20210826055409/bin:/hab/pkgs/core/db/5.3.28/20210826055454/bin:/hab/pkgs/core/less/563/20210826055635/bin:/hab/pkgs/core/openssl/1.0.2zb/20211016150910/bin:/hab/pkgs/core/openssl-fips/2.0.16/20210826061345/bin:/hab/pkgs/core/libtool/2.4.6/20210826055344/bin:/hab/pkgs/core/coreutils/8.32/20210826054709/bin:/hab/pkgs/core/sed/4.8/20210826054515/bin:/hab/pkgs/core/grep/3.6/20210826055009/bin:/hab/pkgs/core/libcap/2.49/20210826054457/bin:/hab/pkgs/core/pcre/8.44/20210826054940/bin:/hab/pkgs/core/ncurses/6.2/20210826054317/bin:/hab/pkgs/core/acl/2.2.53/20210826054434/bin:/hab/pkgs/core/attr/2.4.48/20210826054416/bin:/hab/pkgs/core/binutils/2.36.1/20210826050955/bin:/hab/pkgs/core/glibc/2.33/20210826050111/bin:/hab/pkgs/core/libpng/1.6.37/20210826130053/bin:/hab/pkgs/core/hab-plan-build/1.6.351/20210706203607/bin:/hab/pkgs/core/bash/5.0.16/20200305233030/bin:/hab/pkgs/core/binutils/2.32/20200305174809/bin:/hab/pkgs/core/coreutils/8.30/20200305231640/bin:/hab/pkgs/core/file/5.37/20200305174635/bin:/hab/pkgs/core/findutils/4.6.0/20200306000932/bin:/hab/pkgs/core/gawk/5.0.1/20200305233704/bin:/hab/pkgs/core/grep/3.3/20200305232635/bin:/hab/pkgs/core/gzip/1.10/20200306002325/bin:/hab/pkgs/core/hab/1.6.351/20210706202052/bin:/hab/pkgs/core/rq/0.10.4/20200306011144/bin:/hab/pkgs/core/sed/4.5/20200305230928/bin:/hab/pkgs/core/tar/1.32/20200305233447/bin:/hab/pkgs/core/unzip/6.0/20200306011037/bin:/hab/pkgs/core/wget/1.19.5/20200306010801/bin:/hab/pkgs/core/xz/5.2.4/20200306001321/bin:/hab/pkgs/core/libcap/2.27/20200305230759/bin:/hab/pkgs/core/less/530/20200305235121/bin:/hab/pkgs/core/ncurses/6.1/20200305230210/bin:/hab/pkgs/core/acl/2.2.53/20200305230628/bin:/hab/pkgs/core/attr/2.4.48/20200305230504/bin:/hab/pkgs/core/bzip2/1.0.8/20200305225842/bin:/hab/pkgs/core/libidn2/2.0.4/20200306010601/bin:/hab/pkgs/core/openssl-fips/2.0.16/20200306005307/bin:/hab/pkgs/core/openssl/1.0.2t/20200306005450/bin:/hab/pkgs/core/pcre/8.42/20200305232429/bin:/hab/pkgs/core/glibc/2.29/20200305172459/bin:/hab/pkgs/core/hab-plan-build/1.6.351/20210706203607/bin:/hab/pkgs/core/diffutils/3.7/20200306000423/bin:/hab/pkgs/core/less/530/20200305235121/bin:/hab/pkgs/core/make/4.2.1/20200306002515/bin:/hab/pkgs/core/mg/20180408/20200306015846/bin:/hab/pkgs/core/util-linux/2.34/20200306003119/bin:/hab/pkgs/core/vim/8.1.1694/20200306015156/bin:/hab/pkgs/core/ncurses/6.1/20200305230210/bin:/hab/pkgs/core/bash/5.0.16/20200305233030/bin:/hab/pkgs/core/binutils/2.32/20200305174809/bin:/hab/pkgs/core/coreutils/8.30/20200305231640/bin:/hab/pkgs/core/file/5.37/20200305174635/bin:/hab/pkgs/core/findutils/4.6.0/20200306000932/bin:/hab/pkgs/core/gawk/5.0.1/20200305233704/bin:/hab/pkgs/core/gzip/1.10/20200306002325/bin:/hab/pkgs/core/hab/1.6.351/20210706202052/bin:/hab/pkgs/core/rq/0.10.4/20200306011144/bin:/hab/pkgs/core/sed/4.5/20200305230928/bin:/hab/pkgs/core/tar/1.32/20200305233447/bin:/hab/pkgs/core/unzip/6.0/20200306011037/bin:/hab/pkgs/core/wget/1.19.5/20200306010801/bin:/hab/pkgs/core/xz/5.2.4/20200306001321/bin:/hab/pkgs/core/libcap/2.27/20200305230759/bin:/hab/pkgs/core/grep/3.3/20200305232635/bin:/hab/pkgs/core/bzip2/1.0.8/20200305225842/bin:/hab/pkgs/core/libidn2/2.0.4/20200306010601/bin:/hab/pkgs/core/openssl-fips/2.0.16/20200306005307/bin:/hab/pkgs/core/openssl/1.0.2t/20200306005450/bin:/hab/pkgs/core/pcre/8.42/20200305232429/bin:/hab/pkgs/core/acl/2.2.53/20200305230628/bin:/hab/pkgs/core/attr/2.4.48/20200305230504/bin:/hab/pkgs/core/glibc/2.29/20200305172459/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/bin
+created directory: '/hab/cache/src'
+   meme-machine: Clean the cache
+   meme-machine: Setting build environment
+created directory: '/hab/cache/src/meme-machine-0.1.0'
+   meme-machine: Setting PREFIX=/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124
+   meme-machine: Setting LD_RUN_PATH=/hab/pkgs/core/ruby/3.0.2/20211019144421/lib:/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/lib
+   meme-machine: Setting CFLAGS=-I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/gcc/9.3.0/20210826051400/include -I/hab/pkgs/core/make/4.3/20210826060457/include -I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/include/ImageMagick-7
+   meme-machine: Setting CXXFLAGS=-I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/gcc/9.3.0/20210826051400/include -I/hab/pkgs/core/make/4.3/20210826060457/include -I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/include/ImageMagick-7
+   meme-machine: Setting CPPFLAGS=-I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/gcc/9.3.0/20210826051400/include -I/hab/pkgs/core/make/4.3/20210826060457/include -I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/include/ImageMagick-7
+   meme-machine: Setting LDFLAGS=-L/hab/pkgs/core/git/2.31.0/20211016175551/lib -L/hab/pkgs/core/ruby/3.0.2/20211019144421/lib -L/hab/pkgs/core/gcc/9.3.0/20210826051400/lib -L/hab/pkgs/core/ruby/3.0.2/20211019144421/lib -L/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/lib
+   meme-machine: Setting PKG_CONFIG_PATH=/hab/pkgs/core/ruby/3.0.2/20211019144421/lib/pkgconfig:/hab/pkgs/core/ruby/3.0.2/20211019144421/lib/pkgconfig:/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/lib/pkgconfig
+   meme-machine: Preparing to build
+true
+   meme-machine: Detected build is occuring inside a git work tree.
+   meme-machine: Detecting existing bundler config. Temporarily renaming ...
+   meme-machine: Setting GEM_HOME=/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app/vendor/bundle/ruby/3.0.0
+   meme-machine: Setting GEM_PATH=/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app/vendor/bundle/ruby/3.0.0:/root/.local/share/gem/ruby/3.0.0:/hab/pkgs/core/ruby/3.0.2/20211019144421/lib/ruby/gems/3.0.0
+   meme-machine: Building
+   meme-machine: Installing dependencies using Bundler version 2.2.22
+[DEPRECATED] The `--deployment` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local deployment 'true'`, and stop using this flag
+[DEPRECATED] The `--path` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local path '/hab/cache/src/meme-machine-0.1.0/vendor/bundle'`, and stop using this flag
+[DEPRECATED] The `--shebang` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local shebang '/hab/pkgs/core/ruby/3.0.2/20211019144421/bin/ruby'`, and stop using this flag
+[DEPRECATED] The `--without` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local without 'development:test'`, and stop using this flag
+Fetching gem metadata from https://rubygems.org/
+Fetching gem metadata from https://rubygems.org/....
+Using bundler 2.2.22
+Fetching rmagick 4.1.2
+Fetching rack 2.2.3
+Fetching ruby2_keywords 0.0.2
+Fetching tilt 2.0.10
+Installing ruby2_keywords 0.0.2
+Fetching mustermann 1.1.1
+Installing rack 2.2.3
+Installing rmagick 4.1.2 with native extensions
+Fetching rack-protection 2.0.8.1
+Installing rack-protection 2.0.8.1
+Installing tilt 2.0.10
+Installing mustermann 1.1.1
+Fetching sinatra 2.0.8.1
+Installing sinatra 2.0.8.1
+Bundle complete! 2 Gemfile dependencies, 8 gems now installed.
+Gems in the groups 'development' and 'test' were not installed.
+Bundled gems are installed into `/hab/cache/src/meme-machine-0.1.0/vendor/bundle`
+   meme-machine: Bundle completed (0m9s)
+   meme-machine: Restoring original bundler config
+   meme-machine: Removing installed gem cache
+   meme-machine: Fixing Ruby shebang for RubyGems bins
+   meme-machine: Installing
+created directory: '/hab/pkgs/mb_tryhabitat/'
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/'
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/'
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124'
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/bin'
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app/'
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app/binstubs'
+   meme-machine: Installing app codebase to /hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app/vendor'
+   meme-machine: Installing vendored gems to /hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app/vendor/bundle
+   meme-machine: Generating app binstubs in /hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app/binstubs
+[DEPRECATED] The `--deployment` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local deployment 'true'`, and stop using this flag
+[DEPRECATED] The `--path` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local path '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029162124/app/vendor/bundle'`, and stop using this flag
+[DEPRECATED] The `--shebang` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local shebang '/hab/pkgs/core/ruby/3.0.2/20211019144421/bin/ruby'`, and stop using this flag
+[DEPRECATED] The `--without` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local without 'development:test'`, and stop using this flag
+   meme-machine: Vendoring 'bundler' version 2.2.22
+ERROR:  Could not find a valid gem '/hab/pkgs/core/bundler/2.2.14/20211019145057/cache/bundler-2.2.22.gem' (>= 0) in any repository
+   meme-machine: Build time: 0m51s
+   meme-machine: Exiting on error
+[2][default:/src:2]# cd /hab/pkgs/core/bundler/2.2.14/20211019145057/cache/                   
+[3][default:/hab/pkgs/core/bundler/2.2.14/20211019145057/cache:0]# ls
+bundler-2.2.14.gem
+[4][default:/hab/pkgs/core/bundler/2.2.14/20211019145057/cache:0]#
+[4][default:/hab/pkgs/core/bundler/2.2.14/20211019145057/cache:0]# cd /src
+[5][default:/src:0]# build
+   : Loading /src/habitat/plan.sh
+   meme-machine: Plan loaded
+   meme-machine: Validating plan metadata
+   meme-machine: Using HAB_BIN=/hab/pkgs/core/hab/1.6.351/20210706202052/bin/hab for installs, signing, and hashing
+   meme-machine: hab-plan-build setup
+   meme-machine: Writing pre_build file
+   meme-machine: Resolving scaffolding dependencies
+» Installing core/scaffolding-ruby
+☁ Determining latest version of core/scaffolding-ruby in the 'stable' channel
+→ Using core/scaffolding-ruby/0.8.11/20211019150418
+★ Install of core/scaffolding-ruby/0.8.11/20211019150418 complete with 0 new packages installed.
+   meme-machine: Resolved scaffolding dependency 'core/scaffolding-ruby' to /hab/pkgs/core/scaffolding-ruby/0.8.11/20211019150418
+   meme-machine: Loading Scaffolding /hab/pkgs/core/scaffolding-ruby/0.8.11/20211019150418/lib/scaffolding.sh
+   meme-machine: Detected Rack app type
+   meme-machine: Adding git to build dependencies
+   meme-machine: Adding Busybox package to run dependencies
+No Ruby version found in ./Gemfile.lock
+   meme-machine: No Ruby version detected in Plan or Gemfile.lock, using default 'core/ruby'
+   meme-machine: Setting pkg_svc_run='meme-machine-web'
+   meme-machine: Resolving build dependencies
+» Installing core/git
+☁ Determining latest version of core/git in the 'stable' channel
+→ Using core/git/2.31.0/20211016175551
+★ Install of core/git/2.31.0/20211016175551 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/git' to /hab/pkgs/core/git/2.31.0/20211016175551
+» Installing core/scaffolding-ruby
+☁ Determining latest version of core/scaffolding-ruby in the 'stable' channel
+→ Using core/scaffolding-ruby/0.8.11/20211019150418
+★ Install of core/scaffolding-ruby/0.8.11/20211019150418 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/scaffolding-ruby' to /hab/pkgs/core/scaffolding-ruby/0.8.11/20211019150418
+» Installing core/bundler/2.2.14/20211019145057
+→ Using core/bundler/2.2.14/20211019145057
+★ Install of core/bundler/2.2.14/20211019145057 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/bundler/2.2.14/20211019145057' to /hab/pkgs/core/bundler/2.2.14/20211019145057
+» Installing core/ruby/3.0.2/20211019144421
+→ Using core/ruby/3.0.2/20211019144421
+★ Install of core/ruby/3.0.2/20211019144421 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/ruby/3.0.2/20211019144421' to /hab/pkgs/core/ruby/3.0.2/20211019144421
+» Installing core/tar/1.34/20210826055226
+→ Using core/tar/1.34/20210826055226
+★ Install of core/tar/1.34/20210826055226 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/tar/1.34/20210826055226' to /hab/pkgs/core/tar/1.34/20210826055226
+» Installing core/busybox-static/1.33.0/20210826062032
+→ Using core/busybox-static/1.33.0/20210826062032
+★ Install of core/busybox-static/1.33.0/20210826062032 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/busybox-static/1.33.0/20210826062032' to /hab/pkgs/core/busybox-static/1.33.0/20210826062032
+» Installing core/rq/0.10.4/20210826061933
+→ Using core/rq/0.10.4/20210826061933
+★ Install of core/rq/0.10.4/20210826061933 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/rq/0.10.4/20210826061933' to /hab/pkgs/core/rq/0.10.4/20210826061933
+» Installing core/gcc/9.3.0/20210826051400
+→ Using core/gcc/9.3.0/20210826051400
+★ Install of core/gcc/9.3.0/20210826051400 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/gcc/9.3.0/20210826051400' to /hab/pkgs/core/gcc/9.3.0/20210826051400
+» Installing core/make/4.3/20210826060457
+→ Using core/make/4.3/20210826060457
+★ Install of core/make/4.3/20210826060457 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/make/4.3/20210826060457' to /hab/pkgs/core/make/4.3/20210826060457
+» Installing core/pkg-config/0.29.2/20210826054237
+→ Using core/pkg-config/0.29.2/20210826054237
+★ Install of core/pkg-config/0.29.2/20210826054237 complete with 0 new packages installed.
+   meme-machine: Resolved build dependency 'core/pkg-config/0.29.2/20210826054237' to /hab/pkgs/core/pkg-config/0.29.2/20210826054237
+   meme-machine: Resolving run dependencies
+» Installing core/ruby
+☁ Determining latest version of core/ruby in the 'stable' channel
+→ Using core/ruby/3.0.2/20211019144421
+★ Install of core/ruby/3.0.2/20211019144421 complete with 0 new packages installed.
+   meme-machine: Resolved dependency 'core/ruby' to /hab/pkgs/core/ruby/3.0.2/20211019144421
+» Installing core/busybox-static
+☁ Determining latest version of core/busybox-static in the 'stable' channel
+→ Using core/busybox-static/1.33.0/20210826062032
+★ Install of core/busybox-static/1.33.0/20210826062032 complete with 0 new packages installed.
+   meme-machine: Resolved dependency 'core/busybox-static' to /hab/pkgs/core/busybox-static/1.33.0/20210826062032
+» Installing core/imagemagick
+☁ Determining latest version of core/imagemagick in the 'stable' channel
+→ Using core/imagemagick/7.0.11-3/20210827021227
+★ Install of core/imagemagick/7.0.11-3/20210827021227 complete with 0 new packages installed.
+   meme-machine: Resolved dependency 'core/imagemagick' to /hab/pkgs/core/imagemagick/7.0.11-3/20210827021227
+   meme-machine: Setting up environment
+   meme-machine: Populating runtime environment from dependencies
+   meme-machine: Populating buildtime environment from dependencies
+   meme-machine: Layering runtime environment on top of system environment
+   meme-machine: Layering buildtime environment on top of system environment
+   meme-machine: Setting PATH=/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/bin:/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app/binstubs:/hab/pkgs/core/git/2.31.0/20211016175551/bin:/hab/pkgs/core/scaffolding-ruby/0.8.11/20211019150418/bin:/hab/pkgs/core/bundler/2.2.14/20211019145057/bin:/hab/pkgs/core/ruby/3.0.2/20211019144421/bin:/hab/pkgs/core/tar/1.34/20210826055226/bin:/hab/pkgs/core/busybox-static/1.33.0/20210826062032/bin:/hab/pkgs/core/rq/0.10.4/20210826061933/bin:/hab/pkgs/core/gcc/9.3.0/20210826051400/bin:/hab/pkgs/core/make/4.3/20210826060457/bin:/hab/pkgs/core/pkg-config/0.29.2/20210826054237/bin:/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/bin:/hab/pkgs/core/curl/7.75.0/20211016163637/bin:/hab/pkgs/core/expat/2.4.1/20210826055433/bin:/hab/pkgs/core/gettext/0.21/20210826060159/bin:/hab/pkgs/core/openssh/7.9p1/20211016173828/bin:/hab/pkgs/core/openssh/7.9p1/20211016173828/sbin:/hab/pkgs/core/openssh/7.9p1/20211016173828/libexec:/hab/pkgs/core/perl/5.32.1/20210826055654/bin:/hab/pkgs/core/xz/5.2.5/20210826060128/bin:/hab/pkgs/core/bzip2/1.0.8/20210826054218/bin:/hab/pkgs/core/gdbm/1.19/20210826055409/bin:/hab/pkgs/core/db/5.3.28/20210826055454/bin:/hab/pkgs/core/less/563/20210826055635/bin:/hab/pkgs/core/openssl/1.0.2zb/20211016150910/bin:/hab/pkgs/core/openssl-fips/2.0.16/20210826061345/bin:/hab/pkgs/core/libtool/2.4.6/20210826055344/bin:/hab/pkgs/core/coreutils/8.32/20210826054709/bin:/hab/pkgs/core/sed/4.8/20210826054515/bin:/hab/pkgs/core/grep/3.6/20210826055009/bin:/hab/pkgs/core/libcap/2.49/20210826054457/bin:/hab/pkgs/core/pcre/8.44/20210826054940/bin:/hab/pkgs/core/ncurses/6.2/20210826054317/bin:/hab/pkgs/core/acl/2.2.53/20210826054434/bin:/hab/pkgs/core/attr/2.4.48/20210826054416/bin:/hab/pkgs/core/binutils/2.36.1/20210826050955/bin:/hab/pkgs/core/glibc/2.33/20210826050111/bin:/hab/pkgs/core/libpng/1.6.37/20210826130053/bin:/hab/pkgs/core/hab-plan-build/1.6.351/20210706203607/bin:/hab/pkgs/core/bash/5.0.16/20200305233030/bin:/hab/pkgs/core/binutils/2.32/20200305174809/bin:/hab/pkgs/core/coreutils/8.30/20200305231640/bin:/hab/pkgs/core/file/5.37/20200305174635/bin:/hab/pkgs/core/findutils/4.6.0/20200306000932/bin:/hab/pkgs/core/gawk/5.0.1/20200305233704/bin:/hab/pkgs/core/grep/3.3/20200305232635/bin:/hab/pkgs/core/gzip/1.10/20200306002325/bin:/hab/pkgs/core/hab/1.6.351/20210706202052/bin:/hab/pkgs/core/rq/0.10.4/20200306011144/bin:/hab/pkgs/core/sed/4.5/20200305230928/bin:/hab/pkgs/core/tar/1.32/20200305233447/bin:/hab/pkgs/core/unzip/6.0/20200306011037/bin:/hab/pkgs/core/wget/1.19.5/20200306010801/bin:/hab/pkgs/core/xz/5.2.4/20200306001321/bin:/hab/pkgs/core/libcap/2.27/20200305230759/bin:/hab/pkgs/core/less/530/20200305235121/bin:/hab/pkgs/core/ncurses/6.1/20200305230210/bin:/hab/pkgs/core/acl/2.2.53/20200305230628/bin:/hab/pkgs/core/attr/2.4.48/20200305230504/bin:/hab/pkgs/core/bzip2/1.0.8/20200305225842/bin:/hab/pkgs/core/libidn2/2.0.4/20200306010601/bin:/hab/pkgs/core/openssl-fips/2.0.16/20200306005307/bin:/hab/pkgs/core/openssl/1.0.2t/20200306005450/bin:/hab/pkgs/core/pcre/8.42/20200305232429/bin:/hab/pkgs/core/glibc/2.29/20200305172459/bin:/hab/pkgs/core/hab-plan-build/1.6.351/20210706203607/bin:/hab/pkgs/core/diffutils/3.7/20200306000423/bin:/hab/pkgs/core/less/530/20200305235121/bin:/hab/pkgs/core/make/4.2.1/20200306002515/bin:/hab/pkgs/core/mg/20180408/20200306015846/bin:/hab/pkgs/core/util-linux/2.34/20200306003119/bin:/hab/pkgs/core/vim/8.1.1694/20200306015156/bin:/hab/pkgs/core/ncurses/6.1/20200305230210/bin:/hab/pkgs/core/bash/5.0.16/20200305233030/bin:/hab/pkgs/core/binutils/2.32/20200305174809/bin:/hab/pkgs/core/coreutils/8.30/20200305231640/bin:/hab/pkgs/core/file/5.37/20200305174635/bin:/hab/pkgs/core/findutils/4.6.0/20200306000932/bin:/hab/pkgs/core/gawk/5.0.1/20200305233704/bin:/hab/pkgs/core/gzip/1.10/20200306002325/bin:/hab/pkgs/core/hab/1.6.351/20210706202052/bin:/hab/pkgs/core/rq/0.10.4/20200306011144/bin:/hab/pkgs/core/sed/4.5/20200305230928/bin:/hab/pkgs/core/tar/1.32/20200305233447/bin:/hab/pkgs/core/unzip/6.0/20200306011037/bin:/hab/pkgs/core/wget/1.19.5/20200306010801/bin:/hab/pkgs/core/xz/5.2.4/20200306001321/bin:/hab/pkgs/core/libcap/2.27/20200305230759/bin:/hab/pkgs/core/grep/3.3/20200305232635/bin:/hab/pkgs/core/bzip2/1.0.8/20200305225842/bin:/hab/pkgs/core/libidn2/2.0.4/20200306010601/bin:/hab/pkgs/core/openssl-fips/2.0.16/20200306005307/bin:/hab/pkgs/core/openssl/1.0.2t/20200306005450/bin:/hab/pkgs/core/pcre/8.42/20200305232429/bin:/hab/pkgs/core/acl/2.2.53/20200305230628/bin:/hab/pkgs/core/attr/2.4.48/20200305230504/bin:/hab/pkgs/core/glibc/2.29/20200305172459/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/bin
+   meme-machine: Clean the cache
+   meme-machine: Setting build environment
+created directory: '/hab/cache/src/meme-machine-0.1.0'
+   meme-machine: Setting PREFIX=/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133
+   meme-machine: Setting LD_RUN_PATH=/hab/pkgs/core/ruby/3.0.2/20211019144421/lib:/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/lib
+   meme-machine: Setting CFLAGS=-I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/gcc/9.3.0/20210826051400/include -I/hab/pkgs/core/make/4.3/20210826060457/include -I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/include/ImageMagick-7
+   meme-machine: Setting CXXFLAGS=-I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/gcc/9.3.0/20210826051400/include -I/hab/pkgs/core/make/4.3/20210826060457/include -I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/include/ImageMagick-7
+   meme-machine: Setting CPPFLAGS=-I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/gcc/9.3.0/20210826051400/include -I/hab/pkgs/core/make/4.3/20210826060457/include -I/hab/pkgs/core/ruby/3.0.2/20211019144421/include -I/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/include/ImageMagick-7
+   meme-machine: Setting LDFLAGS=-L/hab/pkgs/core/git/2.31.0/20211016175551/lib -L/hab/pkgs/core/ruby/3.0.2/20211019144421/lib -L/hab/pkgs/core/gcc/9.3.0/20210826051400/lib -L/hab/pkgs/core/ruby/3.0.2/20211019144421/lib -L/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/lib
+   meme-machine: Setting PKG_CONFIG_PATH=/hab/pkgs/core/ruby/3.0.2/20211019144421/lib/pkgconfig:/hab/pkgs/core/ruby/3.0.2/20211019144421/lib/pkgconfig:/hab/pkgs/core/imagemagick/7.0.11-3/20210827021227/lib/pkgconfig
+   meme-machine: Preparing to build
+true
+   meme-machine: Detected build is occuring inside a git work tree.
+   meme-machine: Detecting existing bundler config. Temporarily renaming ...
+   meme-machine: Setting GEM_HOME=/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app/vendor/bundle/ruby/3.0.0
+   meme-machine: Setting GEM_PATH=/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app/vendor/bundle/ruby/3.0.0:/root/.local/share/gem/ruby/3.0.0:/hab/pkgs/core/ruby/3.0.2/20211019144421/lib/ruby/gems/3.0.0
+   meme-machine: Building
+   meme-machine: Installing dependencies using Bundler version 2.2.22
+[DEPRECATED] The `--deployment` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local deployment 'true'`, and stop using this flag
+[DEPRECATED] The `--path` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local path '/hab/cache/src/meme-machine-0.1.0/vendor/bundle'`, and stop using this flag
+[DEPRECATED] The `--shebang` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local shebang '/hab/pkgs/core/ruby/3.0.2/20211019144421/bin/ruby'`, and stop using this flag
+[DEPRECATED] The `--without` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local without 'development:test'`, and stop using this flag
+Fetching gem metadata from https://rubygems.org/
+Fetching gem metadata from https://rubygems.org/....
+Using bundler 2.2.22
+Fetching rack 2.2.3
+Fetching tilt 2.0.10
+Fetching rmagick 4.1.2
+Fetching ruby2_keywords 0.0.2
+Installing ruby2_keywords 0.0.2
+Installing tilt 2.0.10
+Fetching mustermann 1.1.1
+Installing rack 2.2.3
+Installing rmagick 4.1.2 with native extensions
+Installing mustermann 1.1.1
+Fetching rack-protection 2.0.8.1
+Installing rack-protection 2.0.8.1
+Fetching sinatra 2.0.8.1
+Installing sinatra 2.0.8.1
+Bundle complete! 2 Gemfile dependencies, 8 gems now installed.
+Gems in the groups 'development' and 'test' were not installed.
+Bundled gems are installed into `/hab/cache/src/meme-machine-0.1.0/vendor/bundle`
+   meme-machine: Bundle completed (0m8s)
+   meme-machine: Restoring original bundler config
+   meme-machine: Removing installed gem cache
+   meme-machine: Fixing Ruby shebang for RubyGems bins
+   meme-machine: Installing
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133'
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/bin'
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app/'
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app/binstubs'
+   meme-machine: Installing app codebase to /hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app
+created directory: '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app/vendor'
+   meme-machine: Installing vendored gems to /hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app/vendor/bundle
+   meme-machine: Generating app binstubs in /hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app/binstubs
+[DEPRECATED] The `--deployment` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local deployment 'true'`, and stop using this flag
+[DEPRECATED] The `--path` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local path '/hab/pkgs/mb_tryhabitat/meme-machine/0.1.0/20211029173133/app/vendor/bundle'`, and stop using this flag
+[DEPRECATED] The `--shebang` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local shebang '/hab/pkgs/core/ruby/3.0.2/20211019144421/bin/ruby'`, and stop using this flag
+[DEPRECATED] The `--without` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local without 'development:test'`, and stop using this flag
+   meme-machine: Vendoring 'bundler' version 2.2.22
+ERROR:  Could not find a valid gem '/hab/pkgs/core/bundler/2.2.14/20211019145057/cache/bundler-2.2.22.gem' (>= 0) in any repository
+   meme-machine: Build time: 0m18s
+   meme-machine: Exiting on error
+[6][default:/src:2]# cd /hab/pkgs/core/bundler/2.2.14/20211019145057/cache/
+[7][default:/hab/pkgs/core/bundler/2.2.14/20211019145057/cache:0]# ls
+bundler-2.2.14.gem
+[8][default:/hab/pkgs/core/bundler/2.2.14/20211019145057/cache:0]# cd /hab/pkgs/core/bundler/2.2.22                      
+bash: cd: /hab/pkgs/core/bundler/2.2.22: No such file or directory
+[9][default:/hab/pkgs/core/bundler/2.2.14/20211019145057/cache:1]# cd /hab/pkgs/core/bundler/                      
+[10][default:/hab/pkgs/core/bundler:0]# ls
+2.2.14
+[11][default:/hab/pkgs/core/bundler:0]#
